@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank - Member Not Found</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Member Operations Portal</div>
+</header>
+
+<main class="content">
+
+    <section class="card status-card">
+
+        <div class="status-icon status-info">?</div>
+
+        <h2>Member Not Found</h2>
+
+        <p>
+            No member was found with ID
+            <span class="member-id">{{ member_id }}</span>.
+        </p>
+
+        <p>
+            Verify the member identifier and try again.
+        </p>
+
+        <div class="actions">
+            <a class="primary-button" href="/">
+                Return to Search
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

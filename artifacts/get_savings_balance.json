@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "capability_id": "get_savings_balance",
+  "name": "Get Savings Balance",
+  "version": "1.0",
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "sensitive": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "savings_balance",
+      "type": "string"
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "open_search_page",
+      "action": "navigate",
+      "target": null,
+      "value": "http://127.0.0.1:8000",
+      "retry": {
+        "max_attempts": 2,
+        "wait_seconds": 1
+      },
+      "checkpoint": {
+        "type": "text_present",
+        "expected": "Member Search"
+      },
+      "risk": "safe"
+    },
+    {
+      "step_id": "enter_member_id",
+      "action": "fill",
+      "target": {
+        "strategy": "label",
+        "value": "Member ID"
+      },
+      "value": "{{member_id}}",
+      "retry": {
+        "max_attempts": 2,
+        "wait_seconds": 1
+      },
+      "checkpoint": null,
+      "risk": "safe"
+    },
+    {
+      "step_id": "submit_search",
+      "action": "click",
+      "target": {
+        "strategy": "role_button",
+        "value": "Search"
+      },
+      "value": null,
+      "retry": {
+        "max_attempts": 2,
+        "wait_seconds": 1
+      },
+      "checkpoint": {
+        "type": "text_present",
+        "expected": "Member Profile"
+      },
+      "risk": "safe"
+    },
+    {
+      "step_id": "open_savings",
+      "action": "click",
+      "target": {
+        "strategy": "role_link",
+        "value": "View Savings"
+      },
+      "value": null,
+      "retry": {
+        "max_attempts": 2,
+        "wait_seconds": 1
+      },
+      "checkpoint": {
+        "type": "text_present",
+        "expected": "Savings Account"
+      },
+      "risk": "safe"
+    },
+    {
+      "step_id": "extract_balance",
+      "action": "extract",
+      "target": {
+        "strategy": "css",
+        "value": "#savings-balance"
+      },
+      "value": null,
+      "retry": {
+        "max_attempts": 1,
+        "wait_seconds": 0
+      },
+      "checkpoint": null,
+      "risk": "safe"
+    }
+  ],
+  "success_condition": {
+    "type": "text_present",
+    "expected": "Available Balance"
+  },
+  "business_outcomes": [
+    {
+      "code": "MEMBER_NOT_FOUND",
+      "description": "No member exists for the provided member ID."
+    }
+  ]
+}

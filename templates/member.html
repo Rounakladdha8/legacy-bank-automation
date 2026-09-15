@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank Member Profile</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Member Operations Portal</div>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="nav-label">OPERATIONS</div>
+        <a class="nav-item active" href="/">Member Search</a>
+        <span class="nav-item">Account Services</span>
+        <span class="nav-item">Verification</span>
+    </aside>
+
+    <main class="content">
+        <div class="content-inner">
+
+            <div class="eyebrow">Member Services</div>
+            <h2 class="page-title">Member Profile</h2>
+
+            <div class="card">
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">MEMBER ID</div>
+                        <div class="info-value">
+                            {{ member_id }}
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-label">MEMBER NAME</div>
+                        <div class="info-value">
+                            {{ member.name }}
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top:30px;">Accounts</h3>
+
+                <div class="account-card">
+                    <div>
+                        <div class="account-name">
+                            Checking Account
+                        </div>
+                        <div class="account-meta">
+                            Checking Balance:
+                            ${{ member.checking_balance }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <div>
+                        <div class="account-name">
+                            Savings Account
+                        </div>
+                        <div class="account-meta">
+                            Deposit account
+                        </div>
+                    </div>
+
+                    <a
+                        class="primary-button"
+                        href="/member/{{ member_id }}/savings"
+                    >
+                        View Savings
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

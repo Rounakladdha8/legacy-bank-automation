@@ -1,0 +1,20 @@
+{"timestamp": "2026-09-15T02:38:20.770374+00:00", "run_id": "replay-1a38a64d", "event": "run_started", "capability_id": "get_savings_balance", "member_id": "[REDACTED]", "mode": "replay"}
+{"timestamp": "2026-09-15T02:38:21.913282+00:00", "run_id": "replay-1a38a64d", "event": "step_started", "step_id": "open_search_page", "action": "navigate", "risk": "safe"}
+{"timestamp": "2026-09-15T02:38:21.913282+00:00", "run_id": "replay-1a38a64d", "event": "attempt_started", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:22.019045+00:00", "run_id": "replay-1a38a64d", "event": "step_completed", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:22.020045+00:00", "run_id": "replay-1a38a64d", "event": "step_started", "step_id": "enter_member_id", "action": "fill", "risk": "safe"}
+{"timestamp": "2026-09-15T02:38:22.020576+00:00", "run_id": "replay-1a38a64d", "event": "attempt_started", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:22.045475+00:00", "run_id": "replay-1a38a64d", "event": "step_completed", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:22.045475+00:00", "run_id": "replay-1a38a64d", "event": "step_started", "step_id": "submit_search", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T02:38:22.045475+00:00", "run_id": "replay-1a38a64d", "event": "attempt_started", "step_id": "submit_search", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:22.356795+00:00", "run_id": "replay-1a38a64d", "event": "human_intervention_detected", "step_id": "submit_search", "reason": "Manual verification required", "screenshot": "evidence/replay-1a38a64d-submit_search.png"}
+{"timestamp": "2026-09-15T02:38:22.356795+00:00", "run_id": "replay-1a38a64d", "event": "human_handoff_requested", "reason": "LegacyBank requires manual verification.", "step_id": "submit_search"}
+{"timestamp": "2026-09-15T02:38:55.590971+00:00", "run_id": "replay-1a38a64d", "event": "human_handoff_completed", "step_id": "submit_search"}
+{"timestamp": "2026-09-15T02:38:55.633516+00:00", "run_id": "replay-1a38a64d", "event": "step_completed", "step_id": "submit_search", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:55.635520+00:00", "run_id": "replay-1a38a64d", "event": "step_started", "step_id": "open_savings", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T02:38:55.635520+00:00", "run_id": "replay-1a38a64d", "event": "attempt_started", "step_id": "open_savings", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:55.733498+00:00", "run_id": "replay-1a38a64d", "event": "step_completed", "step_id": "open_savings", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:55.735501+00:00", "run_id": "replay-1a38a64d", "event": "step_started", "step_id": "extract_balance", "action": "extract", "risk": "safe"}
+{"timestamp": "2026-09-15T02:38:55.735501+00:00", "run_id": "replay-1a38a64d", "event": "attempt_started", "step_id": "extract_balance", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:55.741919+00:00", "run_id": "replay-1a38a64d", "event": "step_completed", "step_id": "extract_balance", "attempt": 1}
+{"timestamp": "2026-09-15T02:38:55.741919+00:00", "run_id": "replay-1a38a64d", "event": "run_completed", "status": "success"}

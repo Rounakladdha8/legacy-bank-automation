@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank Member Search</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+
+    <div class="environment">
+        Internal Operations · Local Demo
+    </div>
+</header>
+
+
+<div class="layout">
+
+    <!-- =========================================
+         SIDEBAR
+         ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="nav-label">
+            AUTOMATION DEMO
+        </div>
+
+        <a class="nav-item active" href="/">
+            Member Search
+        </a>
+
+
+        <div
+            class="nav-label"
+            style="margin-top:30px;"
+        >
+            CAPABILITY
+        </div>
+
+        <div class="sidebar-info">
+            <strong>
+                Get Savings Balance
+            </strong>
+
+            <span>
+                Search member records and retrieve
+                savings account balances.
+            </span>
+        </div>
+
+
+        <div
+            class="nav-label"
+            style="margin-top:30px;"
+        >
+            ENVIRONMENT
+        </div>
+
+        <div class="sidebar-status">
+            <span class="status-dot"></span>
+            Local Demo
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+         ========================================= -->
+
+    <main class="content">
+
+        <div class="content-inner">
+
+            <div class="eyebrow">
+                Member Services
+            </div>
+
+            <h2 class="page-title">
+                Member Search
+            </h2>
+
+            <p class="page-description">
+                Locate a member record to review profile
+                and account information.
+            </p>
+
+
+            <!-- Search Card -->
+
+            <section class="card">
+
+                <h3 class="card-title">
+                    Find a member
+                </h3>
+
+                <p class="card-description">
+                    Enter the member identifier associated
+                    with the customer record.
+                </p>
+
+
+                <form
+                    action="/search"
+                    method="get"
+                >
+
+                    <div class="form-row">
+
+                        <div>
+
+                            <label for="member_id">
+                                Member ID
+                            </label>
+
+                            <input
+                                id="member_id"
+                                name="member_id"
+                                type="text"
+                                placeholder="Enter member ID"
+                                autocomplete="off"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button type="submit">
+                            Search
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <p class="footer-note">
+                Authorized personnel only ·
+                Activity may be audited
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank Savings Account</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Member Operations Portal</div>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="nav-label">OPERATIONS</div>
+        <a class="nav-item active" href="/">Member Search</a>
+        <span class="nav-item">Account Services</span>
+        <span class="nav-item">Verification</span>
+    </aside>
+
+    <main class="content">
+        <div class="content-inner">
+
+            <div class="eyebrow">Account Services</div>
+            <h2 class="page-title">Savings Account</h2>
+
+            <div class="card">
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">MEMBER ID</div>
+                        <div class="info-value">
+                            {{ member_id }}
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-label">ACCOUNT HOLDER</div>
+                        <div class="info-value">
+                            {{ member.name }}
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:30px;">
+                    <h3>Available Balance</h3>
+
+                    <p
+                        id="savings-balance"
+                        class="balance"
+                    >
+                        ${{ member.savings_balance }}
+                    </p>
+                </div>
+
+                <a class="secondary-link" href="/">
+                    ← Return to Search
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

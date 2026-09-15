@@ -1,0 +1,11 @@
+{"timestamp": "2026-09-15T02:30:18.854247+00:00", "run_id": "replay-08136b0e", "event": "run_started", "capability_id": "get_savings_balance", "member_id": "[REDACTED]", "mode": "replay"}
+{"timestamp": "2026-09-15T02:30:19.987247+00:00", "run_id": "replay-08136b0e", "event": "step_started", "step_id": "open_search_page", "action": "navigate", "risk": "safe"}
+{"timestamp": "2026-09-15T02:30:19.987247+00:00", "run_id": "replay-08136b0e", "event": "attempt_started", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:30:20.120752+00:00", "run_id": "replay-08136b0e", "event": "step_completed", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:30:20.120752+00:00", "run_id": "replay-08136b0e", "event": "step_started", "step_id": "enter_member_id", "action": "fill", "risk": "safe"}
+{"timestamp": "2026-09-15T02:30:20.120752+00:00", "run_id": "replay-08136b0e", "event": "attempt_started", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:30:20.143734+00:00", "run_id": "replay-08136b0e", "event": "step_completed", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:30:20.145041+00:00", "run_id": "replay-08136b0e", "event": "step_started", "step_id": "submit_search", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T02:30:20.145711+00:00", "run_id": "replay-08136b0e", "event": "attempt_started", "step_id": "submit_search", "attempt": 1}
+{"timestamp": "2026-09-15T02:30:20.461992+00:00", "run_id": "replay-08136b0e", "event": "hard_failure", "step_id": "submit_search", "code": "PERMISSION_DENIED", "screenshot": "evidence/replay-08136b0e-submit_search.png"}
+{"timestamp": "2026-09-15T02:30:20.462992+00:00", "run_id": "replay-08136b0e", "event": "run_completed", "status": "hard_failure", "code": "PERMISSION_DENIED"}

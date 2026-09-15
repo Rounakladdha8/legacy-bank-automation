@@ -1,0 +1,11 @@
+{"timestamp": "2026-09-15T16:40:43.638694+00:00", "run_id": "replay-d32214f1", "event": "run_started", "capability_id": "get_savings_balance", "member_id": "[REDACTED]", "mode": "replay"}
+{"timestamp": "2026-09-15T16:40:45.195718+00:00", "run_id": "replay-d32214f1", "event": "step_started", "step_id": "open_search", "action": "navigate", "risk": "safe"}
+{"timestamp": "2026-09-15T16:40:45.195718+00:00", "run_id": "replay-d32214f1", "event": "attempt_started", "step_id": "open_search", "attempt": 1}
+{"timestamp": "2026-09-15T16:40:45.414510+00:00", "run_id": "replay-d32214f1", "event": "step_completed", "step_id": "open_search", "attempt": 1}
+{"timestamp": "2026-09-15T16:40:45.414510+00:00", "run_id": "replay-d32214f1", "event": "step_started", "step_id": "discovered_1_fill", "action": "fill", "risk": "safe"}
+{"timestamp": "2026-09-15T16:40:45.414510+00:00", "run_id": "replay-d32214f1", "event": "attempt_started", "step_id": "discovered_1_fill", "attempt": 1}
+{"timestamp": "2026-09-15T16:40:45.465390+00:00", "run_id": "replay-d32214f1", "event": "step_completed", "step_id": "discovered_1_fill", "attempt": 1}
+{"timestamp": "2026-09-15T16:40:45.466157+00:00", "run_id": "replay-d32214f1", "event": "step_started", "step_id": "discovered_2_click", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T16:40:45.466157+00:00", "run_id": "replay-d32214f1", "event": "attempt_started", "step_id": "discovered_2_click", "attempt": 1}
+{"timestamp": "2026-09-15T16:40:45.602132+00:00", "run_id": "replay-d32214f1", "event": "human_intervention_detected", "step_id": "discovered_2_click", "reason": "Manual verification required", "screenshot": "evidence/replay-d32214f1-discovered_2_click.png"}
+{"timestamp": "2026-09-15T16:40:45.602132+00:00", "run_id": "replay-d32214f1", "event": "human_handoff_requested", "reason": "LegacyBank requires manual verification.", "step_id": "discovered_2_click"}

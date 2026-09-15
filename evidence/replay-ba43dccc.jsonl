@@ -1,0 +1,20 @@
+{"timestamp": "2026-09-15T02:17:59.982612+00:00", "run_id": "replay-ba43dccc", "event": "run_started", "capability_id": "get_savings_balance", "member_id": "[REDACTED]", "mode": "replay"}
+{"timestamp": "2026-09-15T02:18:01.123257+00:00", "run_id": "replay-ba43dccc", "event": "step_started", "step_id": "open_search_page", "action": "navigate", "risk": "safe"}
+{"timestamp": "2026-09-15T02:18:01.123257+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.303245+00:00", "run_id": "replay-ba43dccc", "event": "step_completed", "step_id": "open_search_page", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.304486+00:00", "run_id": "replay-ba43dccc", "event": "step_started", "step_id": "enter_member_id", "action": "fill", "risk": "safe"}
+{"timestamp": "2026-09-15T02:18:01.304486+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.335520+00:00", "run_id": "replay-ba43dccc", "event": "step_completed", "step_id": "enter_member_id", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.335520+00:00", "run_id": "replay-ba43dccc", "event": "step_started", "step_id": "submit_search", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T02:18:01.335520+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "submit_search", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.592948+00:00", "run_id": "replay-ba43dccc", "event": "recoverable_condition", "step_id": "submit_search", "code": "SYSTEM_BUSY", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:01.593947+00:00", "run_id": "replay-ba43dccc", "event": "retry_scheduled", "step_id": "submit_search", "next_attempt": 2, "wait_seconds": 1.0}
+{"timestamp": "2026-09-15T02:18:02.594872+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "submit_search", "attempt": 2}
+{"timestamp": "2026-09-15T02:18:02.662331+00:00", "run_id": "replay-ba43dccc", "event": "step_completed", "step_id": "submit_search", "attempt": 2}
+{"timestamp": "2026-09-15T02:18:02.662331+00:00", "run_id": "replay-ba43dccc", "event": "step_started", "step_id": "open_savings", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T02:18:02.663337+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "open_savings", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:02.740204+00:00", "run_id": "replay-ba43dccc", "event": "step_completed", "step_id": "open_savings", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:02.741220+00:00", "run_id": "replay-ba43dccc", "event": "step_started", "step_id": "extract_balance", "action": "extract", "risk": "safe"}
+{"timestamp": "2026-09-15T02:18:02.741942+00:00", "run_id": "replay-ba43dccc", "event": "attempt_started", "step_id": "extract_balance", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:02.745718+00:00", "run_id": "replay-ba43dccc", "event": "step_completed", "step_id": "extract_balance", "attempt": 1}
+{"timestamp": "2026-09-15T02:18:02.745718+00:00", "run_id": "replay-ba43dccc", "event": "run_completed", "status": "success"}

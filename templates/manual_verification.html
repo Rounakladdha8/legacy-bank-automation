@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank - Manual Verification</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Secure Member Operations</div>
+</header>
+
+<main class="content">
+
+    <section class="card status-card">
+
+        <div class="status-icon status-warning">!</div>
+
+        <h2>Manual Verification Required</h2>
+
+        <p>
+            Additional verification is required before
+            this member record can be accessed.
+        </p>
+
+        <p>
+            Member ID:
+            <span class="member-id">{{ member_id }}</span>
+        </p>
+
+        <form
+            action="/manual-verification/continue"
+            method="get"
+        >
+            <input
+                type="hidden"
+                name="member_id"
+                value="{{ member_id }}"
+            >
+
+            <div class="actions">
+                <button type="submit">
+                    Continue
+                </button>
+            </div>
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+</html>

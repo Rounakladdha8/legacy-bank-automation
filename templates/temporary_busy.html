@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank - System Busy</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Member Operations Portal</div>
+</header>
+
+<main class="content">
+
+    <section class="card status-card">
+
+        <div class="status-icon status-warning">!</div>
+
+        <h2>System Busy</h2>
+
+        <p>
+            The member system is temporarily unavailable.
+            The request may be retried safely.
+        </p>
+
+        <form action="/search" method="get">
+
+            <input
+                type="hidden"
+                name="member_id"
+                value="{{ member_id }}"
+            >
+
+            <div class="actions">
+                <button type="submit">
+                    Search
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+</html>

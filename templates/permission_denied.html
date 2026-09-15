@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegacyBank - Permission Denied</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-mark">L</div>
+        <h1>LegacyBank</h1>
+    </div>
+    <div class="environment">Secure Member Operations</div>
+</header>
+
+<main class="content">
+
+    <section class="card status-card">
+
+        <div class="status-icon status-error">×</div>
+
+        <h2>Permission Denied</h2>
+
+        <p>
+            Your current access level does not permit
+            access to member
+            <span class="member-id">{{ member_id }}</span>.
+        </p>
+
+        <p>
+            Contact an administrator if access is required.
+        </p>
+
+        <div class="actions">
+            <a class="primary-button" href="/">
+                Return to Search
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
