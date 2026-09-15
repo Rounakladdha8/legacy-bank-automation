@@ -1,0 +1,17 @@
+{"timestamp": "2026-09-15T18:35:52.261759+00:00", "run_id": "replay-83f488a8", "event": "run_started", "capability_id": "get_savings_balance", "member_id": "[REDACTED]", "mode": "replay"}
+{"timestamp": "2026-09-15T18:35:53.440872+00:00", "run_id": "replay-83f488a8", "event": "step_started", "step_id": "open_search", "action": "navigate", "risk": "safe"}
+{"timestamp": "2026-09-15T18:35:53.440872+00:00", "run_id": "replay-83f488a8", "event": "attempt_started", "step_id": "open_search", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.622629+00:00", "run_id": "replay-83f488a8", "event": "step_completed", "step_id": "open_search", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.622629+00:00", "run_id": "replay-83f488a8", "event": "step_started", "step_id": "discovered_1_fill", "action": "fill", "risk": "safe"}
+{"timestamp": "2026-09-15T18:35:53.622629+00:00", "run_id": "replay-83f488a8", "event": "attempt_started", "step_id": "discovered_1_fill", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.655993+00:00", "run_id": "replay-83f488a8", "event": "step_completed", "step_id": "discovered_1_fill", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.655993+00:00", "run_id": "replay-83f488a8", "event": "step_started", "step_id": "discovered_2_click", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T18:35:53.655993+00:00", "run_id": "replay-83f488a8", "event": "attempt_started", "step_id": "discovered_2_click", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.822880+00:00", "run_id": "replay-83f488a8", "event": "step_completed", "step_id": "discovered_2_click", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.825977+00:00", "run_id": "replay-83f488a8", "event": "step_started", "step_id": "discovered_3_click", "action": "click", "risk": "safe"}
+{"timestamp": "2026-09-15T18:35:53.825977+00:00", "run_id": "replay-83f488a8", "event": "attempt_started", "step_id": "discovered_3_click", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.927015+00:00", "run_id": "replay-83f488a8", "event": "step_completed", "step_id": "discovered_3_click", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.927015+00:00", "run_id": "replay-83f488a8", "event": "step_started", "step_id": "discovered_4_extract", "action": "extract", "risk": "safe"}
+{"timestamp": "2026-09-15T18:35:53.927015+00:00", "run_id": "replay-83f488a8", "event": "attempt_started", "step_id": "discovered_4_extract", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.947379+00:00", "run_id": "replay-83f488a8", "event": "step_completed", "step_id": "discovered_4_extract", "attempt": 1}
+{"timestamp": "2026-09-15T18:35:53.950909+00:00", "run_id": "replay-83f488a8", "event": "run_completed", "status": "success"}
